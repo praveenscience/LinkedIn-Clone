@@ -1,0 +1,58 @@
+body, input, button, select {
+	font-family: 'Open Sans';
+}
+.navbar-brand {
+	margin-right: 5px;
+}
+.bg-linkedin {
+	background-color: #283e4a;
+}
+.header-search {
+	background-color: rgba(255, 255, 255, 0.75);
+}
+.header-search:focus {
+	background-color: #fff;
+	box-shadow: none;
+	outline: none;
+	border-color: #fff;
+}
+.input-group-append button {
+	display: none;
+}
+.header-search:focus + .input-group-append button {
+	display: block;
+	margin-left: -29px;
+	z-index: 100;
+	border: none;
+	border-radius: 0;
+	background-color: #e0e0e0;
+}
+.header-search:focus + .input-group-append button:hover {
+	color: #000;
+}
+.nav-item {
+	text-align: center;
+	min-width: 85px;
+	border-bottom: 2px solid #283e4a;
+}
+.nav-item.active {
+	border-bottom-color: #fff;
+}
+.nav-item .nav-link {
+	padding: 0;
+}
+.nav-item i {
+	font-size: 1.5em;
+}
+.nav-item small {
+	display: block;
+	font-size: 0.75em;
+}
+.nav-item.dropdown {
+	position: relative;
+}
+.nav-item.dropdown .nav-link.dropdown-toggle::after {
+	position: absolute;
+	bottom: 5px;
+	right: 27%;
+}
